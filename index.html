@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>โรงอาหาร</h1>
+        <p>ค้นหาร้านอาหารและเมนูอร่อย</p>
+    </header>
+
+    <section class="restaurant-list">
+        <div class="restaurant">
+            <h2>ร้านข้าวแกง</h2>
+            <p>เมนูแนะนำ: ข้าวหมูกรอบ</p>
+            <div class="stars">
+                <span>⭐⭐⭐⭐☆</span>
+                <span>(4 ดาว)</span>
+            </div>
+            <button class="review-btn" data-store="ร้านข้าวแกง">รีวิว</button>
+        </div>
+
+        <div class="restaurant">
+            <h2>ร้านก๋วยเตี๋ยว</h2>
+            <p>เมนูแนะนำ: ก๋วยเตี๋ยวเรือ</p>
+            <div class="stars">
+                <span>⭐⭐⭐⭐⭐</span>
+                <span>(5 ดาว)</span>
+            </div>
+            <button class="review-btn" data-store="ร้านก๋วยเตี๋ยว">รีวิว</button>
+        </div>
+    </section>
+
+    <!-- Popup for review -->
+    <div id="reviewPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>รีวิวเมนู</h2>
+            <textarea id="reviewText" rows="4" cols="50" placeholder="เขียนรีวิวที่นี่..."></textarea>
+            <div class="star-rating">
+                <label>
+                    <input type="radio" name="rating" value="1"> ⭐
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2"> ⭐⭐
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3"> ⭐⭐⭐
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4"> ⭐⭐⭐⭐
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐
+                </label>
+            </div>
+            <button id="submitReview">ส่งรีวิว</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
